@@ -3,7 +3,7 @@
   --main-text: #6fb8f5;
   --main-svg: #73a0af;
   --main-background: #1d2833;
-  --secondary-text: #bcb8f5;
+  --secondary-text: #7dd8ec;
 }
 
 #global-nav,
@@ -12,7 +12,9 @@ div.relative.ember-view,
 button.feed-shared-inline-show-more-text__see-more-less-toggle,
 div.comments-comments-list,
 div.feed-shared-external-video__meta,
-div.social-details-first-prompt-block {
+div.social-details-first-prompt-block,
+div.feed-shared-linkedin-video__sponsored-description-container,
+div.comments-comment-item-content-body {
   background-color: var(--background-accent) !important;
 }
 
@@ -36,7 +38,14 @@ h2.feed-shared-article__description,
 div.feed-shared-text span,
 button.social-details-social-counts__count-value span,
 span.feed-shared-actor__sub-description,
-p.feed-shared-main-content {
+p.feed-shared-main-content
+  div.feed-shared-linkedin-video__sponsored-description-container
+  h2,
+div.feed-shared-carousel-job__content p,
+div.feed-shared-carousel-job__footer-text,
+div.feed-shared-poll-option__text-container span,
+div.feed-shared-poll-option__percentage,
+button[data-control-name="feed_sort_dropdown_trigger"] span:first-child {
   color: var(--main-text) !important;
 }
 
@@ -58,7 +67,14 @@ div.comments-comment-box__form-container.flex-grow-1 div.display-flex.mlA,
 article.feed-shared-article,
 a.comments-post-meta__profile-link,
 div.comments-highlighted-comment-item-content-body,
-div.comments-reply-item-content-body {
+div.comments-reply-item-content-body,
+span.reactions-menu--active,
+div.feed-shared-update-v2__update-content-wrapper > div,
+div.comments-highlighted-comment-item__show-more-text
+  button.feed-shared-inline-show-more-text__see-more-less-toggle,
+div.feed-shared-carousel-job__container,
+div.feed-shared-poll,
+div.feed-shared-linkedin-video__description-container--learning {
   background: var(--main-background) !important;
 }
 
@@ -78,7 +94,13 @@ button.follow,
 time.comments-comment-item__timestamp,
 h2.feed-shared-external-video__description-headline,
 h3.feed-shared-external-video__description-byline,
-div.social-details-first-prompt-block button p.t-black {
+div.social-details-first-prompt-block button p.t-black,
+div.inline-show-more-text.inline-show-more-text--is-collapsed.inline-show-more-text--is-collapsed-with-line-clamp,
+button.feed-shared-button,
+div.feed-shared-poll__header p,
+a.feed-shared-linkedin-video__description h2,
+a.feed-shared-linkedin-video__description h3,
+button[data-control-name="feed_sort_dropdown_trigger"] span.t-bold {
   color: var(--secondary-text) !important;
 }
 
@@ -99,4 +121,21 @@ div.comments-comment-box__form-container.flex-grow-1 div.display-flex.mlA {
 article.feed-shared-article {
   border-left: 10px solid var(--background-accent) !important;
   border-right: 10px solid var(--background-accent) !important;
+}
+
+span.reactions-menu--active {
+  box-shadow: 0px 0px 7px 7px var(--background-accent) !important;
+}
+
+div.feed-shared-text {
+  padding: 15px !important;
+}
+
+div.feed-shared-inline-show-more-text {
+  margin-bottom: 0 !important;
+  padding-bottom: 12px !important;
+}
+
+section.ad-banner-container {
+  display: none !important;
 }
