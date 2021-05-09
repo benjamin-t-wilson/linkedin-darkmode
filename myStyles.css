@@ -7,6 +7,10 @@
   --ui-overlay: #000000de;
 }
 
+* {
+  transition: none !important;
+}
+
 #global-nav,
 #main > div:nth-child(1) > div,
 div.relative.ember-view,
@@ -17,7 +21,17 @@ div.social-details-first-prompt-block,
 div.feed-shared-linkedin-video__sponsored-description-container,
 div.comments-comment-item-content-body,
 div.artdeco-modal__header,
-diV.share-box-footer {
+diV.share-box-footer,
+div.feed-shared-image__alttext-nux,
+aside.scaffold-layout__aside div:not([class="mb2"]),
+div.feed-identity-module__actor-meta,
+div.feed-identity-module__widgets,
+a[data-control-name="identity_my_items"],
+div.community-panel > div,
+a[data-control-name="feed_list_discover"],
+header.msg-overlay-bubble-header,
+div.msg-form__msg-content-container--scrollable > div,
+footer.msg-form__footer {
   background-color: var(--background-accent) !important;
 }
 
@@ -65,7 +79,21 @@ div.events-shared-creation-form-v2__form-content
   > div.display-flex.align-items-center.mt3
   > label,
 div.events-shared-creation-form-v2__form-content > form > section.mt6.mb4 label,
-div.events-shared-creation-form-v2__footer.justify-space-between > div > span {
+div.events-shared-creation-form-v2__footer.justify-space-between > div > span,
+div.feed-shared-contextual-header__info span,
+div.feed-shared-text-view span,
+.comments-comment-item__main-content span,
+aside.feed-shared-image__alttext-nux p,
+span.news-module__subtext,
+div.feed-follows-module-recommendation__subtext p,
+div.learning-top-courses__course a div:last-child,
+p.identity-headline,
+a.community-panel-interest-package__header-link span,
+a.community-panel-interest-package__cta span,
+button.community-panel-interest-package__cta span,
+a[data-control-name="feed_list_discover"],
+time.msg-overlay-list-bubble-item__time-stamp,
+h4.msg-conversation-card__participant-names {
   color: var(--main-text) !important;
 }
 
@@ -101,7 +129,10 @@ button.img-edit-button__dropdown-trigger,
 button#timezone-picker-dropdown-trigger,
 div.artdeco-dropdown__content-inner,
 div.basic-typeahead__triggered-content,
-button.events-shared-event-visibility__dropdown-trigger {
+button.events-shared-event-visibility__dropdown-trigger,
+div.comments-comment-item-content-body > div,
+div.msg-overlay-list-bubble-search__input-container,
+div.msg-conversation-card.msg-overlay-list-bubble__convo-card {
   background: var(--main-background) !important;
 }
 
@@ -130,7 +161,24 @@ a.feed-shared-linkedin-video__description h3,
 button[data-control-name="feed_sort_dropdown_trigger"] span.t-bold,
 #share-to-linkedin-modal__header,
 label[for="image-sharing-detour-container__file-input"],
-label[for="video-detour__file-input"] {
+label[for="video-detour__file-input"],
+a.feed-shared-text-view__hashtag,
+div.feed-shared-text-view a,
+aside.feed-shared-image__alttext-nux h5,
+h2.news-module__title span,
+div.news-module__headline,
+div.feed-follows-module__title h2,
+span.feed-follows-module-recommendation__name,
+a.feed-follows-module__view-all,
+div.learning-top-courses h2,
+div.learning-top-courses__course a div:first-child,
+a[data-control-name="learning_top3_show_more"],
+div.profile-rail-card__actor-link,
+div.feed-identity-module__entity-list span,
+a[data-control-name="identity_my_items"] span,
+h2.community-panel-interest-package__header,
+a.community-panel-interest-package__entity-link div,
+div.msg-overlay-list-bubble span {
   color: var(--secondary-text) !important;
 }
 
@@ -176,4 +224,34 @@ div.artdeco-modal-overlay {
 
 div.share-box-footer {
   border-top: 0 !important;
+}
+
+div.comments-comment-item-content-body {
+  padding: 0 0 12px !important;
+}
+
+div.feed-identity-module__widgets {
+  margin: 0 !important;
+  padding: 12px 0 !important;
+}
+
+div.premium-upsell-link {
+  display: none !important;
+}
+
+div.community-panel {
+  padding: 0 !important;
+}
+
+div.community-panel > div {
+  margin: 0 !important;
+  padding-bottom: 16px !important;
+}
+
+header.msg-overlay-bubble-header {
+  box-shadow: 0px 0px 7px 7px var(--main-background) !important;
+}
+
+div.msg-form__msg-content-container--scrollable > div {
+  box-shadow: inset 0px 0px 3px 3px var(--main-background) !important;
 }
