@@ -4,6 +4,7 @@
   --main-svg: #73a0af;
   --main-background: #1d2833;
   --secondary-text: #7dd8ec;
+  --ui-overlay: #000000de;
 }
 
 #global-nav,
@@ -14,7 +15,9 @@ div.comments-comments-list,
 div.feed-shared-external-video__meta,
 div.social-details-first-prompt-block,
 div.feed-shared-linkedin-video__sponsored-description-container,
-div.comments-comment-item-content-body {
+div.comments-comment-item-content-body,
+div.artdeco-modal__header,
+diV.share-box-footer {
   background-color: var(--background-accent) !important;
 }
 
@@ -45,7 +48,24 @@ div.feed-shared-carousel-job__content p,
 div.feed-shared-carousel-job__footer-text,
 div.feed-shared-poll-option__text-container span,
 div.feed-shared-poll-option__percentage,
-button[data-control-name="feed_sort_dropdown_trigger"] span:first-child {
+button[data-control-name="feed_sort_dropdown_trigger"] span:first-child,
+button#timezone-picker-dropdown-trigger > div,
+div.artdeco-dropdown__content-inner > ul > li > div,
+div.events-shared-creation-form-v2__form-content div.t-14.t-black--light.mt3,
+div.events-shared-creation-form-v2__form-content h3,
+div.events-shared-creation-form-v2__form-content label,
+span.artdeco-text-input--counter,
+div.basic-typeahead__triggered-content *,
+#speakers-control-help-note,
+div.events-shared-creation-form-v2__form-content span.t-12.t-black--light,
+button.events-shared-event-visibility__dropdown-trigger > div,
+div.events-shared-creation-form-v2__form-content
+  > form
+  > section.mt6.mb4
+  > div.display-flex.align-items-center.mt3
+  > label,
+div.events-shared-creation-form-v2__form-content > form > section.mt6.mb4 label,
+div.events-shared-creation-form-v2__footer.justify-space-between > div > span {
   color: var(--main-text) !important;
 }
 
@@ -74,7 +94,14 @@ div.comments-highlighted-comment-item__show-more-text
   button.feed-shared-inline-show-more-text__see-more-less-toggle,
 div.feed-shared-carousel-job__container,
 div.feed-shared-poll,
-div.feed-shared-linkedin-video__description-container--learning {
+div.feed-shared-linkedin-video__description-container--learning,
+div.image-sharing-detour-container__edit-content,
+div.share-box-modal-content__container,
+button.img-edit-button__dropdown-trigger,
+button#timezone-picker-dropdown-trigger,
+div.artdeco-dropdown__content-inner,
+div.basic-typeahead__triggered-content,
+button.events-shared-event-visibility__dropdown-trigger {
   background: var(--main-background) !important;
 }
 
@@ -100,7 +127,10 @@ button.feed-shared-button,
 div.feed-shared-poll__header p,
 a.feed-shared-linkedin-video__description h2,
 a.feed-shared-linkedin-video__description h3,
-button[data-control-name="feed_sort_dropdown_trigger"] span.t-bold {
+button[data-control-name="feed_sort_dropdown_trigger"] span.t-bold,
+#share-to-linkedin-modal__header,
+label[for="image-sharing-detour-container__file-input"],
+label[for="video-detour__file-input"] {
   color: var(--secondary-text) !important;
 }
 
@@ -138,4 +168,12 @@ div.feed-shared-inline-show-more-text {
 
 section.ad-banner-container {
   display: none !important;
+}
+
+div.artdeco-modal-overlay {
+  background: var(--ui-overlay) !important;
+}
+
+div.share-box-footer {
+  border-top: 0 !important;
 }
